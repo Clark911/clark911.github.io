@@ -308,31 +308,9 @@ body {
   font-weight: bold;
 }
 #header {
-  height: 300px;
+  height: 70px;
   position: relative;
   border-bottom: 1px solid #ddd;
-}
-#header:before,
-#header:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  height: 40px;
-}
-#header:before {
-  top: 0;
-  background: -webkit-linear-gradient(rgba(0,0,0,0.2), transparent);
-  background: -moz-linear-gradient(rgba(0,0,0,0.2), transparent);
-  background: -ms-linear-gradient(rgba(0,0,0,0.2), transparent);
-  background: linear-gradient(rgba(0,0,0,0.2), transparent);
-}
-#header:after {
-  bottom: 0;
-  background: -webkit-linear-gradient(transparent, rgba(0,0,0,0.2));
-  background: -moz-linear-gradient(transparent, rgba(0,0,0,0.2));
-  background: -ms-linear-gradient(transparent, rgba(0,0,0,0.2));
-  background: linear-gradient(transparent, rgba(0,0,0,0.2));
 }
 #header-outer {
   height: 100%;
@@ -348,31 +326,33 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("images/banner.jpg") center #000;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
   z-index: -1;
 }
 #header-title {
   text-align: center;
-  height: 40px;
+  height: 35px;
   position: absolute;
   top: 50%;
   left: 0;
-  margin-top: -20px;
+  margin-top: -17.5px;
 }
 #logo,
 #subtitle {
   text-decoration: none;
-  color: #fff;
+  color: #9d9087;
   font-weight: 300;
   text-shadow: 0 1px 4px rgba(0,0,0,0.3);
 }
 #logo {
-  font-size: 40px;
-  line-height: 40px;
+  font-size: 35px;
+  line-height: 35px;
   letter-spacing: 2px;
+}
+#logo-wrap {
+  float: left;
+}
+#subtitle-wrap {
+  float: left;
 }
 #subtitle {
   font-size: 16px;
@@ -383,16 +363,15 @@ body {
   margin-top: 16px;
 }
 #main-nav {
-  float: left;
-  margin-left: -15px;
+  float: right;
+  margin-right: -15px;
 }
 .nav-icon,
 .main-nav-link {
   float: left;
-  color: #fff;
+  color: #9d9087;
   opacity: 0.6;
   text-decoration: none;
-  text-shadow: 0 1px rgba(0,0,0,0.2);
   -webkit-transition: opacity 0.2s;
   -moz-transition: opacity 0.2s;
   -ms-transition: opacity 0.2s;
@@ -474,8 +453,6 @@ body {
   background: #fff;
   padding: 5px 15px;
   border-radius: 15px;
-  -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 .search-form-input {
   border: none;
