@@ -68,6 +68,49 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-CAS的Ticket票据" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/03/25/CAS的Ticket票据/" class="article-date">
+  <time datetime="2017-03-25T13:28:02.000Z" itemprop="datePublished">2017-03-25</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/03/25/CAS的Ticket票据/">CAS的Ticket票据</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="TGT（Ticket-Grangting-Ticket）"><a href="#TGT（Ticket-Grangting-Ticket）" class="headerlink" title="TGT（Ticket Grangting Ticket）"></a>TGT（Ticket Grangting Ticket）</h4><p>TGT是CAS为用户签发的登录票据，拥有了TGT，用户就可以证明自己在CAS成功登录过。TGT封装了Cookie值以及此Cookie值对应的用户信息。用户在CAS认证成功后，CAS生成cookie（叫TGC），写入浏览器，同时生成一个TGT对象，放入自己的缓存，TGT对象的ID就是cookie的值。当HTTP再次请求到来时，如果传过来的有CAS生成的cookie，则CAS以此cookie值为key查询缓存中有无TGT ，如果有的话，则说明用户之前登录过，如果没有，则用户需要重新登录。</p>
+<h4 id="TGC-（Ticket-granting-cookie）："><a href="#TGC-（Ticket-granting-cookie）：" class="headerlink" title="TGC （Ticket-granting cookie）："></a>TGC （Ticket-granting cookie）：</h4><p>存放用户身份认证凭证的cookie，在浏览器和CAS Server间通讯时使用，并且只能基于安全通道传输（Https），是CAS Server用来明确用户身份的凭证。</p>
+<h4 id="ST（Service-Ticket）"><a href="#ST（Service-Ticket）" class="headerlink" title="ST（Service Ticket）"></a>ST（Service Ticket）</h4><p>ST是CAS为用户签发的访问某一service的票据。用户访问service时，service发现用户没有ST，则要求用户去CAS获取ST。用户向CAS发出获取ST的请求，如果用户的请求中包含cookie，则CAS会以此cookie值为key查询缓存中有无TGT，如果存在TGT，则用此TGT签发一个ST，返回给用户。用户凭借ST去访问service，service拿ST去CAS验证，验证通过后，允许用户访问资源。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://clark911.github.io/2017/03/25/CAS的Ticket票据/" data-id="cj0pap04l0000wptxnnc09aso" class="article-share-link">Share</a>
+      
+        <a href="https://clark911.github.io/2017/03/25/CAS的Ticket票据/#ds_thread" class="article-comment-link">留言</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CAS/">CAS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ST/">ST</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/TGT/">TGT</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Ticket/">Ticket</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-logstash" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/03/11/logstash/" class="article-date">
@@ -95,7 +138,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://clark911.github.io/2017/03/11/logstash/" data-id="cj050dzxz0002xmtxb1xb9gxg" class="article-share-link">Share</a>
+      <a data-url="https://clark911.github.io/2017/03/11/logstash/" data-id="cj0pap059000bwptxa6t9hcjr" class="article-share-link">Share</a>
       
         <a href="https://clark911.github.io/2017/03/11/logstash/#ds_thread" class="article-comment-link">留言</a>
       
@@ -137,7 +180,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://clark911.github.io/2017/03/07/接口中属性和方法的默认修饰符/" data-id="cj050dzy40004xmtx3ym8hufm" class="article-share-link">Share</a>
+      <a data-url="https://clark911.github.io/2017/03/07/接口中属性和方法的默认修饰符/" data-id="cj0pap05f000ewptxfit3fz6d" class="article-share-link">Share</a>
       
         <a href="https://clark911.github.io/2017/03/07/接口中属性和方法的默认修饰符/#ds_thread" class="article-comment-link">留言</a>
       
@@ -181,7 +224,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://clark911.github.io/2017/02/28/Spring-Web-MVC-异常处理/" data-id="cj050dzxs0000xmtx0l4blhid" class="article-share-link">Share</a>
+      <a data-url="https://clark911.github.io/2017/02/28/Spring-Web-MVC-异常处理/" data-id="cj0pap05b000dwptxe2a992tp" class="article-share-link">Share</a>
       
         <a href="https://clark911.github.io/2017/02/28/Spring-Web-MVC-异常处理/#ds_thread" class="article-comment-link">留言</a>
       
@@ -223,7 +266,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://clark911.github.io/2017/02/27/StringBuffer和StringBuilder/" data-id="cj050dzy70005xmtx6pnx87ro" class="article-share-link">Share</a>
+      <a data-url="https://clark911.github.io/2017/02/27/StringBuffer和StringBuilder/" data-id="cj0pap0560009wptxo03f7nrs" class="article-share-link">Share</a>
       
         <a href="https://clark911.github.io/2017/02/27/StringBuffer和StringBuilder/#ds_thread" class="article-comment-link">留言</a>
       
@@ -249,7 +292,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/ELK/">ELK</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SpringMVC/">SpringMVC</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/StringBuffer/">StringBuffer</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/StringBuilder/">StringBuilder</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/">java</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/logstash/">logstash</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/修饰符/">修饰符</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/异常处理/">异常处理</a></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/CAS/">CAS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ELK/">ELK</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ST/">ST</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/SpringMVC/">SpringMVC</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/StringBuffer/">StringBuffer</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/StringBuilder/">StringBuilder</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/TGT/">TGT</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Ticket/">Ticket</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/">java</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/logstash/">logstash</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/修饰符/">修饰符</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/异常处理/">异常处理</a></li></ul>
     </div>
   </div>
 
@@ -259,7 +302,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签云</h3>
     <div class="widget tagcloud">
-      <a href="/tags/ELK/" style="font-size: 10px;">ELK</a> <a href="/tags/SpringMVC/" style="font-size: 10px;">SpringMVC</a> <a href="/tags/StringBuffer/" style="font-size: 10px;">StringBuffer</a> <a href="/tags/StringBuilder/" style="font-size: 10px;">StringBuilder</a> <a href="/tags/java/" style="font-size: 20px;">java</a> <a href="/tags/logstash/" style="font-size: 10px;">logstash</a> <a href="/tags/修饰符/" style="font-size: 10px;">修饰符</a> <a href="/tags/异常处理/" style="font-size: 10px;">异常处理</a>
+      <a href="/tags/CAS/" style="font-size: 10px;">CAS</a> <a href="/tags/ELK/" style="font-size: 10px;">ELK</a> <a href="/tags/ST/" style="font-size: 10px;">ST</a> <a href="/tags/SpringMVC/" style="font-size: 10px;">SpringMVC</a> <a href="/tags/StringBuffer/" style="font-size: 10px;">StringBuffer</a> <a href="/tags/StringBuilder/" style="font-size: 10px;">StringBuilder</a> <a href="/tags/TGT/" style="font-size: 10px;">TGT</a> <a href="/tags/Ticket/" style="font-size: 10px;">Ticket</a> <a href="/tags/java/" style="font-size: 20px;">java</a> <a href="/tags/logstash/" style="font-size: 10px;">logstash</a> <a href="/tags/修饰符/" style="font-size: 10px;">修饰符</a> <a href="/tags/异常处理/" style="font-size: 10px;">异常处理</a>
     </div>
   </div>
 
@@ -279,6 +322,10 @@
     <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2017/03/25/CAS的Ticket票据/">CAS的Ticket票据</a>
+          </li>
         
           <li>
             <a href="/2017/03/11/logstash/">logstash</a>
