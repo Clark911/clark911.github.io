@@ -68,6 +68,54 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-Windows下查看进程及结束进程命令" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/10/22/Windows下查看进程及结束进程命令/" class="article-date">
+  <time datetime="2017-10-22T12:09:24.000Z" itemprop="datePublished">2017-10-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/10/22/Windows下查看进程及结束进程命令/">Windows下查看进程及结束进程命令</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ol>
+<li>查看占用8080端口的进程号<blockquote>
+<p>netstat –aon | findstr “8080”<br>结果：TCP    0.0.0.0:8080           0.0.0.0:0              LISTENING       3500<br>可知，进程号为3500的进程占用了8080端口<br>可以使用命令 tasklist | findstr “3500”进一步查看3500进程的具体信息。<br>tasklist | findstr “3500”<br>结果：javaw.exe                   3500 Console                 0     28,792 K<br>可知3500进程为javaw.exe。</p>
+</blockquote>
+</li>
+<li>杀掉进程<blockquote>
+<p>tskill 3500 </p>
+</blockquote>
+</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://clark911.github.io/2017/10/22/Windows下查看进程及结束进程命令/" data-id="cj92psx970004njtxjq4371fj" class="article-share-link">Share</a>
+      
+        <a href="https://clark911.github.io/2017/10/22/Windows下查看进程及结束进程命令/#ds_thread" class="article-comment-link">留言</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-CAS的Ticket票据" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/03/25/CAS的Ticket票据/" class="article-date">
@@ -97,7 +145,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://clark911.github.io/2017/03/25/CAS的Ticket票据/" data-id="cj92pjk3q0000m2tx7xvzsxn0" class="article-share-link">Share</a>
+      <a data-url="https://clark911.github.io/2017/03/25/CAS的Ticket票据/" data-id="cj92psx8v0000njtxay5339v3" class="article-share-link">Share</a>
       
         <a href="https://clark911.github.io/2017/03/25/CAS的Ticket票据/#ds_thread" class="article-comment-link">留言</a>
       
@@ -138,7 +186,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://clark911.github.io/2017/03/11/logstash/" data-id="cj92pjk4s000om2txqgceu7ra" class="article-share-link">Share</a>
+      <a data-url="https://clark911.github.io/2017/03/11/logstash/" data-id="cj92psx9a0005njtxy8iyubvd" class="article-share-link">Share</a>
       
         <a href="https://clark911.github.io/2017/03/11/logstash/#ds_thread" class="article-comment-link">留言</a>
       
@@ -180,7 +228,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://clark911.github.io/2017/03/07/接口中属性和方法的默认修饰符/" data-id="cj92pjk4t000pm2txs90pjmri" class="article-share-link">Share</a>
+      <a data-url="https://clark911.github.io/2017/03/07/接口中属性和方法的默认修饰符/" data-id="cj92psx9e0008njtxg63nk33c" class="article-share-link">Share</a>
       
         <a href="https://clark911.github.io/2017/03/07/接口中属性和方法的默认修饰符/#ds_thread" class="article-comment-link">留言</a>
       
@@ -224,7 +272,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://clark911.github.io/2017/02/28/Spring-Web-MVC-异常处理/" data-id="cj92pjk3v0001m2tx5e6qzcil" class="article-share-link">Share</a>
+      <a data-url="https://clark911.github.io/2017/02/28/Spring-Web-MVC-异常处理/" data-id="cj92psx910002njtx2e601tu1" class="article-share-link">Share</a>
       
         <a href="https://clark911.github.io/2017/02/28/Spring-Web-MVC-异常处理/#ds_thread" class="article-comment-link">留言</a>
       
@@ -266,7 +314,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://clark911.github.io/2017/02/27/StringBuffer和StringBuilder/" data-id="cj92pjk420003m2txz4zfnazu" class="article-share-link">Share</a>
+      <a data-url="https://clark911.github.io/2017/02/27/StringBuffer和StringBuilder/" data-id="cj92psx9c0006njtxw8coc63f" class="article-share-link">Share</a>
       
         <a href="https://clark911.github.io/2017/02/27/StringBuffer和StringBuilder/#ds_thread" class="article-comment-link">留言</a>
       
@@ -311,7 +359,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">三月 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">二月 2017</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/">十月 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">三月 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">二月 2017</a></li></ul>
     </div>
   </div>
 
@@ -322,6 +370,10 @@
     <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2017/10/22/Windows下查看进程及结束进程命令/">Windows下查看进程及结束进程命令</a>
+          </li>
         
           <li>
             <a href="/2017/03/25/CAS的Ticket票据/">CAS的Ticket票据</a>
@@ -337,10 +389,6 @@
         
           <li>
             <a href="/2017/02/28/Spring-Web-MVC-异常处理/">Spring Web MVC 异常处理</a>
-          </li>
-        
-          <li>
-            <a href="/2017/02/27/StringBuffer和StringBuilder/">StringBuffer和StringBuilder</a>
           </li>
         
       </ul>
