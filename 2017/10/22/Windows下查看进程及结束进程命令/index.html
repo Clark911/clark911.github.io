@@ -5,19 +5,16 @@
   
   <title>Windows下查看进程及结束进程命令 | CLARK</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="查看占用8080端口的进程号
-netstat –aon | findstr “8080”结果：TCP    0.0.0.0:8080           0.0.0.0:0              LISTENING       3500可知，进程号为3500的进程占用了8080端口可以使用命令 tasklist | findstr “3500”进一步查看3500进程的具体信息。tasklis">
+  <meta name="description" content="查看占用8080端口的进程号–aon | findstr “8080”````1234结果：TCP    0.0.0.0:8080           0.0.0.0:0              LISTENING       3500可知，进程号为3500的进程占用了8080端口可以使用命令 tasklist | findstr “3500”进一步查看3500进程的具体信息。````task">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Windows下查看进程及结束进程命令">
 <meta property="og:url" content="https://clark911.github.io/2017/10/22/Windows下查看进程及结束进程命令/index.html">
 <meta property="og:site_name" content="CLARK">
-<meta property="og:description" content="查看占用8080端口的进程号
-netstat –aon | findstr “8080”结果：TCP    0.0.0.0:8080           0.0.0.0:0              LISTENING       3500可知，进程号为3500的进程占用了8080端口可以使用命令 tasklist | findstr “3500”进一步查看3500进程的具体信息。tasklis">
-<meta property="og:updated_time" content="2017-10-22T12:13:39.333Z">
+<meta property="og:description" content="查看占用8080端口的进程号–aon | findstr “8080”````1234结果：TCP    0.0.0.0:8080           0.0.0.0:0              LISTENING       3500可知，进程号为3500的进程占用了8080端口可以使用命令 tasklist | findstr “3500”进一步查看3500进程的具体信息。````task">
+<meta property="og:updated_time" content="2017-10-22T12:15:35.494Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Windows下查看进程及结束进程命令">
-<meta name="twitter:description" content="查看占用8080端口的进程号
-netstat –aon | findstr “8080”结果：TCP    0.0.0.0:8080           0.0.0.0:0              LISTENING       3500可知，进程号为3500的进程占用了8080端口可以使用命令 tasklist | findstr “3500”进一步查看3500进程的具体信息。tasklis">
+<meta name="twitter:description" content="查看占用8080端口的进程号–aon | findstr “8080”````1234结果：TCP    0.0.0.0:8080           0.0.0.0:0              LISTENING       3500可知，进程号为3500的进程占用了8080端口可以使用命令 tasklist | findstr “3500”进一步查看3500进程的具体信息。````task">
   
     <link rel="alternate" href="/atom.xml" title="CLARK" type="application/atom+xml">
   
@@ -96,14 +93,12 @@ netstat –aon | findstr “8080”结果：TCP    0.0.0.0:8080           0.0.0.
     <div class="article-entry" itemprop="articleBody">
       
         <ol>
-<li>查看占用8080端口的进程号<blockquote>
-<p>netstat –aon | findstr “8080”<br>结果：TCP    0.0.0.0:8080           0.0.0.0:0              LISTENING       3500<br>可知，进程号为3500的进程占用了8080端口<br>可以使用命令 tasklist | findstr “3500”进一步查看3500进程的具体信息。<br>tasklist | findstr “3500”<br>结果：javaw.exe                   3500 Console                 0     28,792 K<br>可知3500进程为javaw.exe。</p>
-</blockquote>
+<li>查看占用8080端口的进程号<figure class="highlight plain"><figcaption><span>–aon | findstr “8080”````</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">结果：TCP    0.0.0.0:8080           0.0.0.0:0              LISTENING       3500</div><div class="line">可知，进程号为3500的进程占用了8080端口</div><div class="line">可以使用命令 tasklist | findstr “3500”进一步查看3500进程的具体信息。</div><div class="line">````tasklist | findstr “3500”</div></pre></td></tr></table></figure>
 </li>
-<li>杀掉进程<blockquote>
-<p>tskill 3500 </p>
-</blockquote>
-</li>
+</ol>
+<p>结果：javaw.exe                   3500 Console                 0     28,792 K<br>可知3500进程为javaw.exe。</p>
+<ol>
+<li>杀掉进程<br><code>tskill 3500</code></li>
 </ol>
 
       
